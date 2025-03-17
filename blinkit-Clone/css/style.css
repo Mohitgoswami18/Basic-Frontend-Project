@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    border: 2px solid  #f4f2f2;
+}
+
+.headerLeft{
+    display: flex;
+}
+
+.logo{
+    padding: 19px 21px;
+    border-right: 2px solid #f4f2f2;
+}
+
+.address{
+    padding: 20px 30px; 
+}
+
+.address h3{
+    font-size: large;
+    padding-bottom: 5px;
+}
+
+.address p{
+    font-weight: 200;
+    font-size: small;
+}
+
+.searchBar{
+    display: flex;
+    flex-grow: 1;
+    border-radius: 15px;
+    border: 1px solid #EEEEEE;
+    background-color: #f7f5f5;
+}
+
+.searchBar button{
+    padding:15px;
+    border: none;
+    background-color: transparent;
+}
+
+.searchBar input{
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+}
+
+input:focus{
+    outline: none;
+}
+
+.headerRight{
+    cursor: pointer;
+    display: flex;
+    padding:15px;
+    gap: 15px;
+}
+
+.login{
+    padding: 20px;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: 200;
+}
+.cart {
+    padding: 14px;
+    height: 51px;
+    margin-top: 4px;
+    margin-right: 29px;
+    background-color: #0C831F;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    align-items: center;
+}
+
+.bigBanner{
+    max-width: 1280px;
+    margin-left: -8px;
+}
+
+.bannerimg img{
+    width: 100%;
+}
+
+.smallBanner{
+    display: flex;
+}
+
+.smallBannerImage{
+    flex-basis: 30%;
+    padding: 10px;
+}
+
+.smallBannerImage img{
+    width: 100%;
+}
+
+.itemList{
+    display: flex;
+    flex-wrap:wrap;
+    margin-bottom: 20px;
+}
+
+.itemListImage{
+    flex-basis: 10%;
+}
+
+.itemListImage img{
+    width: 100%;
+}
+
+.headingRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headingRow a{
+    text-decoration: none;
+    color: #0C831F;
+}
+
+.productRow{
+    margin: 20px 0px;
+    display: flex;
+    width: 100%;
+}
+
+.productItem{
+    margin-left: 10px;
+    flex-basis: 15%;
+    border:2px solid #f4f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px  1px #ccc;
+}
+
+.productItemImage{
+    text-align: center;
+    padding: 10px;
+}
+
+.productItemImage p{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 10px;
+    width: 60px;
+    gap: 5px;
+    border-radius: 7%;
+    background-color: #f7f7f7;
+}
+
+.productContent{
+    padding: 0px 10px 10px 10px;
+}
+
+.productContent h2{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.productContent p{
+    margin-top: 23px;
+    font-size: 12px;
+    color: #858585;
+}
+
+.productFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.productFooter button{
+    cursor: pointer;
+    background-color: #F7FFF9;
+    padding: 8px 20px;
+    color: #0C831F;
+    border: 1px solid #0C831F;
+}
+
+.productFooter p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.headingRow h2{
+    margin-left: 20px;
+}
+
+.footer{
+    margin: 120px 20px;
+}
+
+.footer div h3{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footerhead{
+    display: flex;
+    max-width: 1280px;
+    width:100%;
+}
+
+.footerheadLeft{
+    flex-basis: 30%;
+}
+
+.footerLeftcontent{
+
+    display: flex;
+}
+
+.footerLeftcontent ul li{
+    list-style: none;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.footerLeftcontent ul li a{
+    text-decoration: none;
+    color: #707070;
+}
+
+
+.footerLeftcontent ul{
+    flex-basis: 33%;
+}
+
+.footerheadRight{
+    flex-basis: 70%;
+}
+
+.footerRightcontent{
+    display: flex;
+}
+
+.footerRightheading{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footerRightheading :last-child {
+    color: #0C831F;
+    font-weight: 100;
+    font-size: small;
+}
+
+.footerheadRight ul li{
+    list-style: none;
+    font-size: 13px;
+    padding: 8px;
+}
+
+.footerheadRight ul li a{
+    text-decoration: none;
+    color: #707070;
+}
+
+
+.footerheadRight ul{
+    flex-basis: 33%;
+}
+
+.footermidcontent{
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 60px;
+    padding: 20px;
+    display: flex;
+}
+
+.copyright{
+    margin-top: 10px;
+    font-size: small;
+    color: #858585;
+    margin-right: 60px;
+}
+
+.download{
+    display: flex;
+    font-size: 15px;
+    text-align: center;
+    color: #666666;
+}
+
+.download p{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.download img{
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.socialmediaicon{
+    display: flex;
+    margin: 0px 20px;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.footerfoot p{
+    font-size: small;
+    margin: 20px;
+    margin-bottom: 20px;
+    color: #767676;
+}
