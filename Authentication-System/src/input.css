@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@layer{
+    .disabled{
+        @apply text-slate-400;
+    }
+}

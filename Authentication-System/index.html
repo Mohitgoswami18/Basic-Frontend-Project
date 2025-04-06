@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SignInPage</title>
+        <link rel="stylesheet" href="src/output.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body style="background-image: url('s.jpeg')"
+        class="w-[100vw] h-[100vh] bg-[url('s.jpeg')] font-['Poppins'] bg-no-repeat bg-cover flex items-center justify-center">
+        
+        <!-- main section starts  -->
+        <main class=" w-[450px] rounded-2xl shadow-[#183A39] shadow-lg bg-white mx-auto h-[550px]" >
+            <h1 class="relative text-4xl text-center p-4 font-semibold text-green-600 ">Sign up</h1>
+            <div id="plate" class="transition-transform duration-100 ml-[160px] w-12 h-1 rounded-2xl bg-green-600"></div>
+            <div class="flex items-center justify-around px-6">
+                <button id="signUpBtn" class="transition-colors duration-75 cursor-pointer hover:scale-105 hover:font-bold bg-transparent outline-none border-none text-xl text-semibold text-green-500  mt-12">Sign up</button>
+                <button id="signInBtn" class="transition-colors duration-75 cursor-pointer hover:scale-105 hover:font-bold bg-transparent outline-none border-none text-xl text-semibold text-green-500 disabled mt-12">Sign in</button>
+            </div>
+            <form action="" id="auth-form">
+                <div class="flex flex-col p-4 mt-12">
+                    <span id="username" class=" transition-all duration-300 h-12  relative flex items-center justify-center space-x-2"><i class=" fa-solid fa-user py-2 px-2"></i><input  class=" w-full overflow-none focus:outline-[#cac7c7] active:outline-[#f0f0f0] py-2 px-2 rounded-xl text-lg bg-[#f0f0f0] mt-2 " id="Username" type="text" placeholder="username"></span>
+                    <span class="relative flex items-center justify-center space-x-2"><i class="fa-solid fa-envelope py-2 px-2"></i><input class="w-full focus:outline-[#cac7c7] active:outline-[#f0f0f0] py-2 px-2 rounded-xl text-lg bg-[#f0f0f0] mt-2 " type="email" id="email" placeholder="Email address" required></span>
+                    <span class="relative flex items-center justify-center space-x-2"><i class="fa-solid fa-lock py-2 px-2 "></i><input class="w-full focus:outline-[#cac7c7] py-2 mb-0 px-2 rounded-xl text-lg bg-[#f0f0f0] mt-2 " type="password" id="password" placeholder="Password" required></span>
+                </div>
+                <p id="suggestion-para" class="text-sm px-4 text-slate-500 mt-0 pt-0 ml-10 tracking-tighter">Suggest strong password <a href="#" class="text-blue-950 outline-none "> &nbsp; click here!</a></p>
+    
+                <button type="submit" id="submit-btn" class="ml-40 p-3 mb-2 hover:scale-110 transition-transform duration-100 rounded-2xl bg-green-900 text-center text-white mt-20 w-[30%]">continue</button>
+            </form>
+        </main>
+        <!-- main section ends    -->
+
+        <script src="script.js"></script>
+    </body>
+</html>
